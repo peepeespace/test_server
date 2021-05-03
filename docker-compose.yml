@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  server_1:
+    build:
+      context: .
+      dockerfile: Dockerfile1
+    container_name: server_1
+    command: python3 main.py
+    ports:
+      - "6000:6000"
+    networks:
+      - default
+      - data_handler
+    restart: always
+
+networks:
+  data_handler:
+    driver: bridge

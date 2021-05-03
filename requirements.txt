@@ -1,0 +1,6 @@
+certifi==2020.12.5
+DatastreamDSWS==1.0.8
+inquirer==2.7.0
+psycopg2-binary==2.8.6
+pyzmq==22.0.3
+wincertstore==0.2
